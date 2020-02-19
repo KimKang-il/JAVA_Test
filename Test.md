@@ -193,44 +193,38 @@ class TVCR extends Tv,VCR{ //에러. 조상은 하나만 허용
 
 ### 예제코드
 ```java
+
+Class Vehicle {
+
+    public int speed;
+    
+    public int getSpeed() {
+        return speed;
+    }
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+    
+}
+
+class Car extends Vehicle {
+
+}
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        Car A = new Car();
+        A.getSpeed();
+    }
+}
 ```
 
-class Tv{
-  boolean power;
-  int channel;
-  
-  void power(){ power = !power; }
-  void channelUp(){ ++channel; }
-  void channelDown(){ --channel; }
-}
 
-class CaptionTv extends Tv{
-  boolean caption;
-  void disployCaption(String text){
-    if(caption){
-      system.out.println(text);
-    }
-  }
-}
-
-class CaptionTvTest{
-  public static voidmain(String args[]){
-    CaptionTv ctv = new CaptionTv();
-    ctv.channel = 10;
-    ctv.channelUp();
-    System.out.println(ctv.channel);
-    ctv.displayCaption("Hello, World");
-    ctv.caprion = tru;
-    ctv.displayCaption("Hello, World");
-    }
-  }
-}
 
 ### 코드에 대한 설명
-*   Tv클래스로부터상속받고 기능을 추가하여 CaptionTv클래스를 작성.
-* 멤버변수 caption은 캡션기능의 상태를 저장하기 위한 bloolean형 변수
-* displayCaption(String text)는 매개변수로 넘겨받은 문자열(text)을 캡션이 켜져있는 경우 (caption의 값이 true인경우)에만 화면에 출력
-
+*   Car 클래스에는 getSpeed 메소드가 없지만 상속된 Vehicle에 getSpeed 메소드가 있기 때문에 사용 가능하다.
 
 # 2. 실습형 과제
 
