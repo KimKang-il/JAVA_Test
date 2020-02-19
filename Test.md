@@ -45,7 +45,7 @@ Car(String color){
 
 ### 예제코드
 ```java
-```
+
 class Main {
 	
 	public static void main(String[] args) {
@@ -71,6 +71,8 @@ class Book {
 		System.out.println(Name + "/" + Author + "/" + page);
 	}
 }
+
+```
 
 ### 코드에 대한 설명
 * main에서 받은 JAVA, 20, GOORM을 BOOK클래스에 있는 변수들에 맞게 입력 바고 Print에 보내서 출력한다.
@@ -112,7 +114,7 @@ for(int i = 0 ; tvArr.length; i++){
 
 ### 예제코드
 ```java
-```
+
 public class TV {
  
     String color;
@@ -137,7 +139,7 @@ public class TV {
         tv.channelDown();
         System.out.println("Tv channel is " + tv.channel);
     }
- 
+```
 
 ### 코드에 대한 설명
 * 인스턴스  TV tv = new TV(); 를 생성해서 tv.channel을 7로 넣고 tv.channelDown();해서 tv.cahnnel을 출력시킨다.
